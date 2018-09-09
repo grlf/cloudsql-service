@@ -20,7 +20,7 @@ else
     cp etc/cloudsql/cloudsql.conf /etc/cloudsql/cloudsql.conf
 fi
 
-update-rc.d cloudsql defaults
+chkconfig cloudsql on
 
 echo <<EOD
 Google Cloud SQL Proxy installed in $CLOUDSQL_HOME.
